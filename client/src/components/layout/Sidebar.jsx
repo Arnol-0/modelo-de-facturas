@@ -40,9 +40,9 @@ export default function Sidebar({ active }) {
 
       <div className="sidebar-footer">
         <div className="user-pill">
-          <div className="avatar">AR</div>
+          <div className="avatar">US</div>
           <div className="user-meta">
-            <div className="user-name">Alex Rivera</div>
+            <div className="user-name">Usuario</div>
             <div className="user-plan">Plan Premium</div>
           </div>
         </div>

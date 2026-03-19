@@ -4,6 +4,7 @@ export default function LoginPage({ onLogin }) {
   const [mode, setMode] = useState('login') // login | forgot
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [remember, setRemember] = useState(true)
 
   const title = useMemo(() => {
     if (mode === 'forgot') return 'Recuperar contraseña'
@@ -55,9 +56,16 @@ export default function LoginPage({ onLogin }) {
 
           {mode === 'login' && (
             <div className="row between">
-              <label className="checkbox">
-                <input type="checkbox" />
-                <span>Mantener sesión iniciada</span>
+              <label className="switch">
+                <input
+                  type="checkbox"
+                  checked={remember}
+                  onChange={(e) => setRemember(e.target.checked)}
+                />
+                <span className="switch-track" aria-hidden="true">
+                  <span className="switch-knob" />
+                </span>
+                <span className="switch-label">Mantener sesión iniciada</span>
               </label>
               <button type="button" className="link" onClick={() => setMode('forgot')}>
                 ¿Olvidaste tu contraseña?

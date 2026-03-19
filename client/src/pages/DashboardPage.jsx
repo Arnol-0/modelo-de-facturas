@@ -50,7 +50,7 @@ export default function DashboardPage({ onUploadClick }) {
     <div className="page">
       <div className="page-head">
         <div>
-          <h2>Bienvenido de nuevo, Alex</h2>
+          <h2>Bienvenido de nuevo, Usuario</h2>
           <p>Aquí tienes el resumen de tu actividad financiera de este mes.</p>
         </div>
         <div className="segmented">
