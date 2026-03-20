@@ -42,8 +42,8 @@ export default function StatsPage() {
 
   function handleExportPdf() {
     exportStatsToPdf({
-      filename: `facturapro_estadisticas_${range}.pdf`,
-      meta: { title: 'FacturaPro — Estadísticas', periodLabel },
+      filename: `punto_factura_estadisticas_${range}.pdf`,
+      meta: { title: 'Punto factura — Estadísticas', periodLabel },
       indicators: {
         avg: insights.avg,
         maxLabel: insights.max?.label || '—',
@@ -57,8 +57,8 @@ export default function StatsPage() {
 
   function handleExportExcel() {
     exportStatsToExcel({
-      filename: `facturapro_estadisticas_${range}.xlsx`,
-      meta: { title: 'FacturaPro — Estadísticas', periodLabel },
+      filename: `punto_factura_estadisticas_${range}.xlsx`,
+      meta: { title: 'Punto factura — Estadísticas', periodLabel },
       indicators: {
         avg: insights.avg,
         maxLabel: insights.max?.label || '—',

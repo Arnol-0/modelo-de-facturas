@@ -74,7 +74,7 @@ export function exportStatsToExcel({
   wsInvoices['!cols'] = [{ wch: 14 }, { wch: 26 }, { wch: 12 }, { wch: 12 }, { wch: 16 }]
   XLSX.utils.book_append_sheet(wb, wsInvoices, 'Facturas')
 
-  const outName = safeFilename(filename || 'facturapro_estadisticas.xlsx')
+  const outName = safeFilename(filename || 'punto_factura_estadisticas.xlsx')
   XLSX.writeFile(wb, outName)
 }
 
@@ -185,6 +185,6 @@ export function exportStatsToPdf({
     margin: { left: 40, right: 40 },
   })
 
-  const outName = safeFilename(filename || 'facturapro_estadisticas.pdf')
+  const outName = safeFilename(filename || 'punto_factura_estadisticas.pdf')
   doc.save(outName)
 }
