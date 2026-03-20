@@ -27,7 +27,7 @@ export default function Sidebar({ active }) {
       <div className="sidebar-brand">
         <div className="brand-mark">F</div>
         <div className="brand-text">
-          <div className="brand-name">FacturaPro</div>
+          <div className="brand-name">Punto factura</div>
           <div className="brand-sub">Gestión de facturas</div>
         </div>
       </div>

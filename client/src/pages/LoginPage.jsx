@@ -33,7 +33,7 @@ export default function LoginPage({ onLogin }) {
         <div className="login-logo">
           <div className="brand-mark">F</div>
           <div>
-            <div className="brand-name">Invoicer</div>
+            <div className="brand-name">Punto factura</div>
             <div className="brand-sub">Facturas seguras</div>
           </div>
         </div>
